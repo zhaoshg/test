@@ -2,7 +2,7 @@ package com.nowcoder.algorithms;
 
 import java.util.Arrays;
 
-public class SortBase {
+public class BaseSort {
 
     int[] arr = {2, 1, 6, 4, 9, 8, 7, 0};
 

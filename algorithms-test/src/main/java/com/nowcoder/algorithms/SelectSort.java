@@ -1,6 +1,6 @@
 package com.nowcoder.algorithms;
 
-public class SelectSort extends SortBase {
+public class SelectSort extends BaseSort {
 
     @Override
     public void sort() {

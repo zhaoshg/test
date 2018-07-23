@@ -1,6 +1,6 @@
 package com.nowcoder.algorithms;
 
-public class QuickSort extends SortBase{
+public class QuickSort extends BaseSort {
     @Override
     public void sort() {
 

@@ -3,20 +3,21 @@ package com.nowcoder.algorithms;
 public class MySortTest {
 
     public static void main(String[] args) {
-//        BubbleSort bs = new BubbleSort();
-//        bs.checkin(0, 50, 100);
-//
-//        InsertSort is = new InsertSort();
-//        is.checkin(0, 50, 100);
-//
-//        SelectSort ss = new SelectSort();
-//        ss.checkin(0, 50, 100);
-        int[] arr = {2,3,9,6,7,1,0,11,23,45,15,35};
-        System.out.println(max(arr,0,arr.length-1));
-
+        int[] arr = {2, 3, 9, 6, 7, 1, 0};
+        ReversedPair rp = new ReversedPair();
+        rp.setArr(arr);
+        rp.sort();
     }
 
 
+    /**
+     * 求一个数组中的最大值,用递归实现
+     *
+     * @param arr
+     * @param left
+     * @param right
+     * @return
+     */
     static int max(int[] arr, int left, int right) {
         if (left == right) {
             return arr[left];
