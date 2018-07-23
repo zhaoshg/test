@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="20.0" y="0.0">java.lang.ThreadLocal</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.lang.ThreadLocal" target="java.lang.ThreadLocal">
+      <point x="0.0" y="14.5" />
+      <point x="82.5" y="49.0" />
+      <point x="0.0" y="49.0" />
+      <point x="0.0" y="14.5" />
+      <point x="-62.5" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.4" x="72.28571428571433" y="-26.21428571428578" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
