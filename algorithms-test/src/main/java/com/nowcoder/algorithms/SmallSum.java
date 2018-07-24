@@ -37,22 +37,29 @@ public class SmallSum extends BaseSort {
         return mergeSort(l, mid) + mergeSort(mid + 1, r) + merge(l, mid, r);
     }
 
-    private int merge(int l, int mid, int r) {
-        System.out.println("需要merge的数组为:" + Arrays.toString(arr));
+    private int merge(int l, int m, int r) {
+        //打印,帮助理解
+        System.out.print("{left=" + l + " , mid=" + m + ", right=" + r + "}");
+        int[] left = new int[m - l + 1];
+        int[] right = new int[r - m];
+        System.arraycopy(arr, l, left, 0, m - l + 1);
+        System.arraycopy(arr, m + 1, right, 0, r - m);
+        System.out.println("此时[" + Arrays.toString(left) + "] 和 [" + Arrays.toString(right) + "] 进行merge操作");
+
         int[] help = new int[r - l + 1];
         int i = 0;
         int p1 = l;
-        int p2 = mid + 1;
+        int p2 = m + 1;
         //这个是小和
         int res = 0;
         //开始排
-        while (p1 <= mid && p2 <= r) {
+        while (p1 <= m && p2 <= r) {
             //如果arr[p1] 比 arr[p2]小,那么arr[p1]就是arr[p2]以及它后面所有元素的小和原子之一 :  小和 += (r-p2+1)*arr[p1]
             //如果arr[p1] 比 arr[p2]大,那么arr[p1]针对它右侧的所有数,都不产生小和变化
             res += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0;
             help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
         }
-        while (p1 <= mid) {
+        while (p1 <= m) {
             help[i++] = arr[p1++];
         }
         while (p2 <= r) {

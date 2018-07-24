@@ -40,8 +40,14 @@ public class MergeSort extends BaseSort {
      * @param r 右下标
      */
     private void merge(int l, int m, int r) {
-        //打印排序区间,帮助理解
+        //打印,帮助理解
         System.out.print("{left=" + l + " , mid=" + m + ", right=" + r + "}");
+        int[] left = new int[m - l + 1];
+        int[] right = new int[r - m];
+        System.arraycopy(arr, l, left, 0, m - l + 1);
+        System.arraycopy(arr, m + 1, right, 0, r - m);
+        System.out.println("此时[" + Arrays.toString(left) + "] 和 [" + Arrays.toString(right) + "] 进行merge操作");
+
         //辅助数组
         int[] help = new int[r - l + 1];
         //辅助数组下标

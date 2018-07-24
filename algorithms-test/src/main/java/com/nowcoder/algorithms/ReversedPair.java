@@ -29,18 +29,18 @@ public class ReversedPair extends BaseSort {
         merge(l, mid, r);
     }
 
-    private void merge(int l, int mid, int r) {
-        int[] left = new int[mid - l + 1];
-        int[] right = new int[r - mid];
-        System.arraycopy(arr, l, left, 0, mid - l + 1);
-        System.arraycopy(arr, mid + 1, right, 0, r - mid);
+    private void merge(int l, int m, int r) {
+        int[] left = new int[m - l + 1];
+        int[] right = new int[r - m];
+        System.arraycopy(arr, l, left, 0, m - l + 1);
+        System.arraycopy(arr, m + 1, right, 0, r - m);
         System.out.println("此时[" + Arrays.toString(left) + "] 和 [" + Arrays.toString(right) + "] 进行merge操作");
         int[] help = new int[r - l + 1];
         int i = 0;
         int p1 = l;
-        int p2 = mid + 1;
+        int p2 = m + 1;
         //开始排
-        while (p1 <= mid && p2 <= r) {
+        while (p1 <= m && p2 <= r) {
             //如果arr[p1]>arr[p2],说明,arr[p1]比arr[p2...r]的所有元素都大,那么都会组成逆序对
             if (arr[p1] > arr[p2]) {
                 for (int j = p2; j < r + 1; j++) {
@@ -49,7 +49,7 @@ public class ReversedPair extends BaseSort {
             }
             help[i++] = arr[p1] > arr[p2] ? arr[p1++] : arr[p2++];
         }
-        while (p1 <= mid) {
+        while (p1 <= m) {
             help[i++] = arr[p1++];
         }
         while (p2 <= r) {

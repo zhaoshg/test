@@ -3,10 +3,9 @@ package com.nowcoder.algorithms;
 public class MySortTest {
 
     public static void main(String[] args) {
-        int[] arr = {2, 3, 9, 6, 7, 1, 0};
-        ReversedPair rp = new ReversedPair();
-        rp.setArr(arr);
-        rp.sort();
+        int[] arr = {2, 0, 9, 6, 7, 1, 3};
+        OptimizedQuickSort oqs = new OptimizedQuickSort();
+        oqs.checkin(5,30,100);
     }
 
 
