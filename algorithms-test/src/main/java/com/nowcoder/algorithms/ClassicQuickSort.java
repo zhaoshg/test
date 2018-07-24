@@ -52,6 +52,13 @@ public class ClassicQuickSort extends BaseSort {
         return new int[]{less + 1, more};
     }
 
+
+    /**
+     * 这个分区方法和荷兰国旗一样,是比较方便理解的 加入了num和curr
+     * @param l
+     * @param r
+     * @return
+     */
     protected int[] partition2(int l, int r) {
         int less = l - 1;
         int more = r + 1;

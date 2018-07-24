@@ -2,6 +2,11 @@ package com.nowcoder.algorithms;
 
 import java.util.Stack;
 
+/**
+ * 优化后的快速排序
+ * partition过程,使用荷兰国旗算法
+ *
+ */
 public class OptimizedQuickSort extends ClassicQuickSort {
     @Override
     public void sort() {
