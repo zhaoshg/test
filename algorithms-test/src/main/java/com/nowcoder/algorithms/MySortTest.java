@@ -5,7 +5,9 @@ public class MySortTest {
     public static void main(String[] args) {
         int[] arr = {2, 0, 9, 6, 7, 1, 3};
         OptimizedQuickSort oqs = new OptimizedQuickSort();
-        oqs.checkin(5, 30, 100);
+        oqs.checkin(5, 80, 100);
+        HeapSort hs = new HeapSort();
+        hs.checkin(5, 80, 100);
     }
 
 
