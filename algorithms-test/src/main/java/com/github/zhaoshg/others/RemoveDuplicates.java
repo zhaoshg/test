@@ -2,7 +2,7 @@ package com.github.zhaoshg.others;
 
 /**
  * 删除有序数组中重复数字
- *
+ * <p>
  * 采用快慢指针法，如果fast指针和slow指针的前一个数不一样，则把fast指针指向数字移动到slow位置。
  */
 public class RemoveDuplicates {
@@ -14,8 +14,8 @@ public class RemoveDuplicates {
 
     public static void removeDuplicates(int[] arr) {
 
-        int slow = 1, fast;
-        for (fast = 1; fast < arr.length; fast++) {
+        int slow = 1;
+        for (int fast = 1; fast < arr.length; fast++) {
             if (arr[fast] != arr[slow - 1]) {
                 arr[slow++] = arr[fast];
             }
