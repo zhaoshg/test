@@ -5,18 +5,18 @@ package com.nowcoder.algorithms;
  */
 public class ClassicQuickSort extends BaseSort {
     @Override
-    public void sort() {
+    public void sort(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
-        quickSort(0, arr.length - 1);
+        quickSort(arr, 0, arr.length - 1);
     }
 
-    private void quickSort(int l, int r) {
+    private void quickSort(int[] arr, int l, int r) {
         if (l < r) {
-            int[] p = partition(l, r);
-            quickSort(l, p[0] - 1);
-            quickSort(p[1] + 1, r);
+            int[] p = partition(arr, l, r);
+            quickSort(arr, l, p[0] - 1);
+            quickSort(arr, p[1] + 1, r);
         }
     }
 
@@ -32,14 +32,14 @@ public class ClassicQuickSort extends BaseSort {
      * 也就是说,equ区间又往后面移了一位,bigger区间下标原来是[more ... r],交换完就变成了[more+1,r]
      * 那么,equ区间的下标就应该是[less+1,(more+1)-1],所以就是[less+1,more]
      **/
-    int[] partition(int l, int r) {
+    int[] partition(int[] arr, int l, int r) {
         int less = l - 1;
         int more = r;
         while (l < more) {
             if (arr[l] < arr[r]) {
-                swap(++less, l++);
+                swap(arr, ++less, l++);
             } else if (arr[l] > arr[r]) {
-                swap(--more, l);
+                swap(arr, --more, l);
             } else {
                 l++;
             }
@@ -48,27 +48,28 @@ public class ClassicQuickSort extends BaseSort {
         // 所以它正确的位置,需要和more区域第一个数交换一下
         //| smaller |   equ   |  bigger |num|  (equ == num)
         //| smaller |   equ    num|  bigger |   交换之后变成这样
-        swap(more, r);
+        swap(arr, more, r);
         return new int[]{less + 1, more};
     }
 
 
     /**
      * 这个分区方法和荷兰国旗一样,是比较方便理解的 加入了num和curr
+     *
      * @param l
      * @param r
      * @return
      */
-    protected int[] partition2(int l, int r) {
+    protected int[] partition2(int[] arr, int l, int r) {
         int less = l - 1;
         int more = r + 1;
         int num = arr[r];
         int curr = l;
         while (curr < more) {
             if (arr[curr] < num) {
-                swap(++less, curr++);
+                swap(arr, ++less, curr++);
             } else if (arr[curr] > arr[r]) {
-                swap(--more, curr);
+                swap(arr, --more, curr);
             } else {
                 curr++;
             }
@@ -76,4 +77,9 @@ public class ClassicQuickSort extends BaseSort {
         return new int[]{less + 1, more - 1};
     }
 
+
+    public static void main(String[] args) {
+        ClassicQuickSort sort = new ClassicQuickSort();
+        sort.testSort(new int[]{2, 3, 9, 6, 7, 11, 1, 0, 8, 5});
+    }
 }

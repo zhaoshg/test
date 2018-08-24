@@ -4,20 +4,13 @@ import java.util.Arrays;
 
 public class BaseSort {
 
-    int[] arr = {2, 1, 6, 4, 9, 8, 7, 0};
 
-
-    public void setArr(int[] arr) {
-        this.arr = arr;
-    }
-
-
-    public void sort() {
+    public void sort(int[] arr) {
         return;
     }
 
 
-    public void swap(int i, int j) {
+    public void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
@@ -69,13 +62,6 @@ public class BaseSort {
     }
 
     // for test
-    public void printArray() {
-        if (arr == null) {
-            return;
-        }
-        System.out.println(Arrays.toString(arr));
-    }
-    // for test
     public void printArray(int[] arr) {
         if (arr == null) {
             return;
@@ -84,17 +70,16 @@ public class BaseSort {
     }
 
 
-    public void checkin(int testTime,int maxSize,int maxVal){
+    public void checkin(int testTime, int maxSize, int maxVal) {
         boolean succeed = true;
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxVal);
             int[] arr2 = copyArray(arr1);
-            setArr(arr1);
-            sort();
+            sort(arr1);
             comparator(arr2);
-            if (!isEqual(arr, arr2)) {
+            if (!isEqual(arr1, arr2)) {
                 succeed = false;
-                printArray(arr);
+                printArray(arr1);
                 printArray(arr2);
                 break;
             }
@@ -103,8 +88,20 @@ public class BaseSort {
 
         int[] arr = generateRandomArray(maxSize, maxVal);
         printArray(arr);
-        setArr(arr);
-        sort();
+        sort(arr);
         printArray(arr);
+    }
+
+
+    public void testSort(int[] arr) {
+        if (arr == null) {
+            arr = generateRandomArray(50, 50);
+        }
+        System.out.println("Before sort: ");
+        printArray(arr);
+        sort(arr);
+        System.out.println("after sort: ");
+        printArray(arr);
+
     }
 }

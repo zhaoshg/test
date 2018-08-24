@@ -11,7 +11,7 @@ import java.util.Arrays;
  * |                       |X|
  * |  smaller  X|   bigger   |
  * 然后X不动,再对X左边和右边的数组进行同样的操作.
- *
+ * <p>
  * 优化为荷兰国旗问题,那么就不是X不动了,而是整个equ区不动,然后左右同样操作.
  */
 
@@ -27,9 +27,9 @@ public class NetherlandsFlag {
      * @return 边界
      */
     public static int[] partition(int[] arr, int l, int r, int num) {
-        var less = l - 1;
-        var more = r + 1;
-        var curr = l;
+        int less = l - 1;
+        int more = r + 1;
+        int curr = l;
         while (curr < more) {
             if (arr[curr] < num) {
                 swap(arr, ++less, curr++);
@@ -55,4 +55,6 @@ public class NetherlandsFlag {
         System.out.println(Arrays.toString(arr));
         System.out.println(Arrays.toString(res));
     }
+
+
 }

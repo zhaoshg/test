@@ -21,23 +21,23 @@ import java.util.Arrays;
  */
 public class SmallSum extends BaseSort {
     @Override
-    public void sort() {
+    public void sort(int[] arr) {
         if (arr.length < 2) {
             return;
         }
 
-        int res = mergeSort(0, arr.length - 1);
+        int res = mergeSort(arr, 0, arr.length - 1);
         System.out.println("小和 = " + res);
     }
 
-    private int mergeSort(int l, int r) {
+    private int mergeSort(int[] arr, int l, int r) {
         if (l == r)
             return 0;
         int mid = l + ((r - l) >> 1);
-        return mergeSort(l, mid) + mergeSort(mid + 1, r) + merge(l, mid, r);
+        return mergeSort(arr, l, mid) + mergeSort(arr, mid + 1, r) + merge(arr, l, mid, r);
     }
 
-    private int merge(int l, int m, int r) {
+    private int merge(int[] arr, int l, int m, int r) {
         //打印,帮助理解
         System.out.print("{left=" + l + " , mid=" + m + ", right=" + r + "}");
         int[] left = new int[m - l + 1];
@@ -70,5 +70,11 @@ public class SmallSum extends BaseSort {
             arr[l + i] = help[i];
         }
         return res;
+    }
+
+
+    public static void main(String[] args) {
+        SmallSum sort = new SmallSum();
+        sort.testSort(new int[]{2, 3, 9, 6, 7, 11, 1, 0, 8, 5});
     }
 }

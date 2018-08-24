@@ -10,26 +10,26 @@ import java.util.Arrays;
  */
 public class ReversedPair extends BaseSort {
     @Override
-    public void sort() {
+    public void sort(int[] arr) {
         if (arr.length < 2) {
             return;
         }
         System.out.println("需要排序的数组为:" + Arrays.toString(arr));
-        mergeSort(0, arr.length - 1);
+        mergeSort(arr, 0, arr.length - 1);
         System.out.println();
         System.out.println("排序之后的数组为:" + Arrays.toString(arr));
     }
 
-    private void mergeSort(int l, int r) {
+    private void mergeSort(int[] arr, int l, int r) {
         if (l == r)
             return;
         int mid = l + ((r - l) >> 1);
-        mergeSort(l, mid);
-        mergeSort(mid + 1, r);
-        merge(l, mid, r);
+        mergeSort(arr, l, mid);
+        mergeSort(arr, mid + 1, r);
+        merge(arr, l, mid, r);
     }
 
-    private void merge(int l, int m, int r) {
+    private void merge(int[] arr, int l, int m, int r) {
         int[] left = new int[m - l + 1];
         int[] right = new int[r - m];
         System.arraycopy(arr, l, left, 0, m - l + 1);
@@ -57,5 +57,11 @@ public class ReversedPair extends BaseSort {
         }
 
         System.arraycopy(help, 0, arr, l, help.length);
+    }
+
+
+    public static void main(String[] args) {
+        ReversedPair sort = new ReversedPair();
+        sort.testSort(new int[]{2, 3, 9, 6, 7, 11, 1, 0, 8, 5});
     }
 }

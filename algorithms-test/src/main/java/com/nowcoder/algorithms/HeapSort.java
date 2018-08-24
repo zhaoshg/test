@@ -10,17 +10,17 @@ public class HeapSort extends BaseSort {
 
 
     @Override
-    public void sort() {
+    public void sort(int[] arr) {
         if (arr == null || arr.length < 2)
             return;
         for (int i = 0; i < arr.length; i++) {
-            heapInsert(i);
+            heapInsert(arr, i);
         }
         int size = arr.length;
-        swap(0, --size);
+        swap(arr, 0, --size);
         while (size > 0) {
-            heapify(0, size);
-            swap(0, --size);
+            heapify(arr, 0, size);
+            swap(arr, 0, --size);
         }
     }
 
@@ -30,7 +30,7 @@ public class HeapSort extends BaseSort {
      * @param index 要检查的元素
      * @param size  堆长度
      */
-    private void heapify(int index, int size) {
+    private void heapify(int[] arr, int index, int size) {
         //TODO 元素下沉
         int left = index * 2 + 1;
         while (left < size) {
@@ -43,7 +43,7 @@ public class HeapSort extends BaseSort {
             if (largest == index)
                 break;
             //不满足,就把index和largest的元素交换
-            swap(index, largest);
+            swap(arr, index, largest);
             //当前下标来到原先larget的位置
             index = largest;
             //然后计算当前下标的left,继续循环
@@ -58,10 +58,16 @@ public class HeapSort extends BaseSort {
      *
      * @param index
      */
-    private void heapInsert(int index) {
+    private void heapInsert(int[] arr, int index) {
         while (arr[index] > arr[(index - 1) / 2]) {
-            swap(index, (index - 1) / 2);
+            swap(arr, index, (index - 1) / 2);
             index = (index - 1) / 2;
         }
+    }
+
+
+    public static void main(String[] args) {
+        HeapSort sort = new HeapSort();
+        sort.testSort(new int[]{2, 3, 9, 6, 7, 11, 1, 0, 8, 5});
     }
 }
