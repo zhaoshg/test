@@ -2,12 +2,10 @@ package com.nowcoder.algorithms;
 
 import java.util.Arrays;
 
-public class BaseSort {
+public abstract class BaseSort {
 
 
-    public void sort(int[] arr) {
-        return;
-    }
+    protected abstract void sort(int[] arr);
 
 
     public void swap(int[] arr, int i, int j) {

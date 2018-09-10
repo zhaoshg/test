@@ -1,4 +1,6 @@
-package com.nowcoder.algorithms;
+package com.nowcoder.algorithms.lesson1;
+
+import com.nowcoder.algorithms.BaseSort;
 
 import java.util.Arrays;
 

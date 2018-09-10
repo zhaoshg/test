@@ -1,4 +1,4 @@
-package com.nowcoder.algorithms;
+package com.nowcoder.algorithms.lesson1;
 
 import java.util.Arrays;
 
