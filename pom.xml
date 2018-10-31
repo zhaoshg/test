@@ -13,6 +13,7 @@
         <module>algorithms-test</module>
         <module>concurrency-test</module>
         <module>other-test</module>
+        <module>design-patterns-test</module>
     </modules>
 
     <properties>
