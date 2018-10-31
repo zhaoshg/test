@@ -56,6 +56,7 @@ public class ClassicQuickSort extends BaseSort {
 
 
     /**
+
      * 这个分区方法和荷兰国旗一样,是比较方便理解的 加入了num和curr
      *
      * @param l

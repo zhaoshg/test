@@ -4,6 +4,11 @@ public class ArrayToStackQueue {
 
 	/**
 	 * 用数组实现栈
+	 * 只需要增加一个指针，指在栈顶的位置。同数组长度一起，两个变量即可确定一个栈结构。
+	 *
+	 * push：判断指针是否超过数组长度，如果没超过，把入栈数字放入index++位置。
+	 * pop：判断指针是否为0，不为零，则弹出--index的数值
+	 * peek：返回index-1位置的数。
 	 */
 	public static class ArrayStack {
 		private Integer[] arr;
@@ -12,7 +17,7 @@ public class ArrayToStackQueue {
 
 		public ArrayStack(int initSize) {
 			if (initSize < 0) {
-				throw new IllegalArgumentException("The init index is less than 0");
+					throw new IllegalArgumentException("The init index is less than 0");
 			}
 			arr = new Integer[initSize];
 			index = 0;
@@ -45,7 +50,7 @@ public class ArrayToStackQueue {
 	 * 用三个变量来描述队列。
 	 * size：数组当前使用了的长度
 	 * start：数组起始位置
-	 * end：数组尾部，每添加一个输
+	 * end：数组尾部，每添加一个
 	 */
 	public static class ArrayQueue {
 		private Integer[] arr;

@@ -25,7 +25,7 @@ public class MaxGap {
             return 0;
         }
         /**
-         * hasNum、maxs、mins三个长度为N+1的数组，分别代表n+1个桶的三个元素
+         * hasNum、maxs、mins三个长度为N+1的数组，分别代表n+1个桶的三个特征
          * hasNum[i]: 代表 第i个桶有没有数据
          * max[i]:    代表第i个桶的max值
          * min[i]:    代表第i个桶的min值
