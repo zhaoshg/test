@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="293.23333333333335" y="172.0">com.github.zhaoshg.designpatterns.builder.Burger</node>
+    <node x="230.7564814814815" y="81.0">com.github.zhaoshg.designpatterns.builder.Wrapper</node>
+    <node x="484.75000000000006" y="253.0">com.github.zhaoshg.designpatterns.builder.Meal</node>
+    <node x="245.90833333333342" y="0.0">com.github.zhaoshg.designpatterns.builder.Packing</node>
+    <node x="3.75" y="253.0">com.github.zhaoshg.designpatterns.builder.Pepsi</node>
+    <node x="268.15833333333336" y="354.0">com.github.zhaoshg.designpatterns.builder.MealBuilder</node>
+    <node x="331.75000000000006" y="253.0">com.github.zhaoshg.designpatterns.builder.ChickenBurger</node>
+    <node x="39.50000000000006" y="172.0">com.github.zhaoshg.designpatterns.builder.ColdDrink</node>
+    <node x="200.75000000000006" y="253.0">com.github.zhaoshg.designpatterns.builder.VegBurger</node>
+    <node x="274.15833333333336" y="435.0">com.github.zhaoshg.designpatterns.builder.BuilderPatternDemo</node>
+    <node x="102.75000000000006" y="253.0">com.github.zhaoshg.designpatterns.builder.Coke</node>
+    <node x="0.0" y="81.0">com.github.zhaoshg.designpatterns.builder.Bottle</node>
+    <node x="471.50000000000006" y="81.0">com.github.zhaoshg.designpatterns.builder.Item</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.github.zhaoshg.designpatterns.builder.Burger" target="com.github.zhaoshg.designpatterns.builder.Item">
+      <point x="29.333333333333343" y="-15.5" />
+      <point x="366.5666666666667" y="152.0" />
+      <point x="499.25000000000006" y="152.0" />
+      <point x="-9.25" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.ColdDrink" target="com.github.zhaoshg.designpatterns.builder.Item">
+      <point x="35.333333333333314" y="-15.5" />
+      <point x="127.83333333333337" y="142.0" />
+      <point x="480.75000000000006" y="142.0" />
+      <point x="-27.75" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.Burger" target="com.github.zhaoshg.designpatterns.builder.Wrapper">
+      <point x="-29.33333333333333" y="-15.5" />
+      <point x="307.90000000000003" y="132.0" />
+      <point x="280.7564814814815" y="132.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.MealBuilder" target="com.github.zhaoshg.designpatterns.builder.VegBurger">
+      <point x="-9.833333333333314" y="-15.5" />
+      <point x="317.32500000000005" y="314.0" />
+      <point x="256.25000000000006" y="314.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.MealBuilder" target="com.github.zhaoshg.designpatterns.builder.Meal">
+      <point x="49.166666666666686" y="-15.5" />
+      <point x="376.32500000000005" y="324.0" />
+      <point x="523.25" y="324.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.MealBuilder" target="com.github.zhaoshg.designpatterns.builder.ChickenBurger">
+      <point x="9.833333333333314" y="-15.5" />
+      <point x="336.9916666666667" y="304.0" />
+      <point x="398.25000000000006" y="304.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.VegBurger" target="com.github.zhaoshg.designpatterns.builder.Burger">
+      <point x="0.0" y="-15.5" />
+      <point x="256.25000000000006" y="228.0" />
+      <point x="315.23333333333335" y="228.0" />
+      <point x="-22.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.Meal" target="com.github.zhaoshg.designpatterns.builder.Item">
+      <point x="19.25" y="-15.5" />
+      <point x="542.5" y="228.0" />
+      <point x="528.75" y="228.0" />
+      <point x="528.75" y="152.0" />
+      <point x="536.25" y="152.0" />
+      <point x="27.75" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.Burger" target="com.github.zhaoshg.designpatterns.builder.Packing">
+      <point x="0.0" y="-15.5" />
+      <point x="337.23333333333335" y="132.0" />
+      <point x="341.2564814814815" y="132.0" />
+      <point x="341.2564814814815" y="61.0" />
+      <point x="311.00833333333344" y="61.0" />
+      <point x="18.600000000000023" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.ChickenBurger" target="com.github.zhaoshg.designpatterns.builder.Burger">
+      <point x="-2.8421709430404007E-14" y="-15.5" />
+      <point x="398.25" y="228.0" />
+      <point x="359.23333333333335" y="228.0" />
+      <point x="22.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.MealBuilder" target="com.github.zhaoshg.designpatterns.builder.Coke">
+      <point x="-29.5" y="-15.5" />
+      <point x="297.65833333333336" y="324.0" />
+      <point x="141.75000000000006" y="324.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.Wrapper" target="com.github.zhaoshg.designpatterns.builder.Packing">
+      <point x="0.0" y="-15.5" />
+      <point x="280.7564814814815" y="61.0" />
+      <point x="292.4083333333334" y="61.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.MealBuilder" target="com.github.zhaoshg.designpatterns.builder.Pepsi">
+      <point x="-49.166666666666686" y="-15.5" />
+      <point x="277.9916666666667" y="334.0" />
+      <point x="43.25" y="334.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.BuilderPatternDemo" target="com.github.zhaoshg.designpatterns.builder.Meal">
+      <point x="55.0" y="-15.5" />
+      <point x="411.65833333333336" y="410.0" />
+      <point x="511.2564814814815" y="410.0" />
+      <point x="511.2564814814815" y="334.0" />
+      <point x="548.9166666666667" y="334.0" />
+      <point x="25.66666666666663" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.BuilderPatternDemo" target="com.github.zhaoshg.designpatterns.builder.MealBuilder">
+      <point x="0.0" y="-15.5" />
+      <point x="29.5" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.Pepsi" target="com.github.zhaoshg.designpatterns.builder.ColdDrink">
+      <point x="0.0" y="-15.5" />
+      <point x="43.25" y="228.0" />
+      <point x="66.00000000000006" y="228.0" />
+      <point x="-26.5" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.ColdDrink" target="com.github.zhaoshg.designpatterns.builder.Packing">
+      <point x="0.0" y="-15.5" />
+      <point x="92.50000000000006" y="61.0" />
+      <point x="273.8083333333334" y="61.0" />
+      <point x="-18.600000000000023" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.ColdDrink" target="com.github.zhaoshg.designpatterns.builder.Bottle">
+      <point x="-35.33333333333337" y="-15.5" />
+      <point x="57.166666666666686" y="152.0" />
+      <point x="41.0" y="152.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.Bottle" target="com.github.zhaoshg.designpatterns.builder.Packing">
+      <point x="0.0" y="-15.5" />
+      <point x="41.0" y="51.0" />
+      <point x="255.20833333333343" y="51.0" />
+      <point x="-37.19999999999999" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.Item" target="com.github.zhaoshg.designpatterns.builder.Packing">
+      <point x="0.0" y="-15.5" />
+      <point x="508.50000000000006" y="51.0" />
+      <point x="329.6083333333334" y="51.0" />
+      <point x="37.19999999999999" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.builder.Coke" target="com.github.zhaoshg.designpatterns.builder.ColdDrink">
+      <point x="0.0" y="-15.5" />
+      <point x="141.75000000000006" y="228.0" />
+      <point x="119.00000000000006" y="228.0" />
+      <point x="26.5" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.4000000000000001" x="385.30769230769226" y="242.97435897435892" />
+  <SelectedNodes>
+    <node>com.github.zhaoshg.designpatterns.builder.BuilderPatternDemo</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

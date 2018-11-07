@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="28.35119047619048" y="81.0">com.github.zhaoshg.designpatterns.factory.EmailSender</node>
+    <node x="187.60119047619048" y="162.0">com.github.zhaoshg.designpatterns.factory.NormalFactory</node>
+    <node x="0.0" y="162.0">com.github.zhaoshg.designpatterns.factory.MultiFactory</node>
+    <node x="168.35119047619048" y="81.0">com.github.zhaoshg.designpatterns.factory.SMSSender</node>
+    <node x="83.86904761904763" y="0.0">com.github.zhaoshg.designpatterns.factory.MessageSender</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.github.zhaoshg.designpatterns.factory.NormalFactory" target="com.github.zhaoshg.designpatterns.factory.EmailSender">
+      <point x="-44.66666666666666" y="-15.5" />
+      <point x="209.93452380952382" y="132.0" />
+      <point x="118.35119047619048" y="132.0" />
+      <point x="30.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.EmailSender" target="com.github.zhaoshg.designpatterns.factory.MessageSender">
+      <point x="0.0" y="-15.5" />
+      <point x="88.35119047619048" y="61.0" />
+      <point x="137.11904761904765" y="61.0" />
+      <point x="-17.75" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.MultiFactory" target="com.github.zhaoshg.designpatterns.factory.SMSSender">
+      <point x="39.666666666666686" y="-15.5" />
+      <point x="99.16666666666669" y="142.0" />
+      <point x="197.10119047619048" y="142.0" />
+      <point x="-28.75" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.SMSSender" target="com.github.zhaoshg.designpatterns.factory.MessageSender">
+      <point x="0.0" y="-15.5" />
+      <point x="225.85119047619048" y="61.0" />
+      <point x="172.61904761904765" y="61.0" />
+      <point x="17.75" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.NormalFactory" target="com.github.zhaoshg.designpatterns.factory.MessageSender">
+      <point x="44.66666666666666" y="-15.5" />
+      <point x="299.2678571428571" y="142.0" />
+      <point x="309.0357142857143" y="142.0" />
+      <point x="309.0357142857143" y="51.0" />
+      <point x="208.11904761904765" y="51.0" />
+      <point x="53.25" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.MultiFactory" target="com.github.zhaoshg.designpatterns.factory.MessageSender">
+      <point x="-39.66666666666666" y="-15.5" />
+      <point x="19.833333333333343" y="142.0" />
+      <point x="7.309523809523796" y="142.0" />
+      <point x="7.309523809523796" y="51.0" />
+      <point x="101.61904761904763" y="51.0" />
+      <point x="-53.25" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.MultiFactory" target="com.github.zhaoshg.designpatterns.factory.EmailSender">
+      <point x="0.0" y="-15.5" />
+      <point x="59.5" y="142.0" />
+      <point x="58.35119047619048" y="142.0" />
+      <point x="-30.0" y="15.5" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.NormalFactory" target="com.github.zhaoshg.designpatterns.factory.SMSSender">
+      <point x="0.0" y="-15.5" />
+      <point x="28.75" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="161.0" y="96.5" />
+  <SelectedNodes>
+    <node>com.github.zhaoshg.designpatterns.factory.EmailSender</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

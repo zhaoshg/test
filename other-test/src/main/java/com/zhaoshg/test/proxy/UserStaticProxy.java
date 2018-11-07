@@ -23,5 +23,4 @@ public class UserStaticProxy implements UserService {
         System.out.println("UserStaticProxy addUser posterior **********");
         return res;
     }
-
 }
