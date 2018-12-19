@@ -22,6 +22,4 @@ public class HPFactory extends PCFactory {
         ((HPMic) mic).getMic();
         return mic;
     }
-
-
 }
