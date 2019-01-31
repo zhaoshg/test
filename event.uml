@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.zhaoshg.test.event.AttrChangeListener</OriginalElement>
+  <nodes>
+    <node x="241.75" y="79.0">java.lang.Enum</node>
+    <node x="247.5" y="158.0">com.zhaoshg.test.event.EventType</node>
+    <node x="141.0" y="311.0">com.zhaoshg.test.event.AttrChangeListener</node>
+    <node x="24.5" y="385.0">com.zhaoshg.test.event.Event</node>
+    <node x="0.0" y="311.0">com.zhaoshg.test.event.SkillListener</node>
+    <node x="153.5" y="0.0">java.lang.Comparable</node>
+    <node x="0.0" y="79.0">com.zhaoshg.test.event.EventDispatcher</node>
+    <node x="76.75" y="232.0">com.zhaoshg.test.event.EventListener</node>
+    <node x="294.5" y="0.0">java.io.Serializable</node>
+    <node x="0.0" y="464.0">com.zhaoshg.test.event.LevelUpEvent</node>
+    <node x="23.5" y="158.0">com.zhaoshg.test.event.CommonEventDispatcher</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.zhaoshg.test.event.EventType" target="java.lang.Enum">
+      <point x="0.0" y="-14.5" />
+      <point x="20.75" y="14.5" />
+    </edge>
+    <edge source="com.zhaoshg.test.event.LevelUpEvent" target="com.zhaoshg.test.event.Event">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.zhaoshg.test.event.CommonEventDispatcher" target="com.zhaoshg.test.event.EventDispatcher">
+      <point x="-51.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.io.Serializable">
+      <point x="20.75" y="-14.5" />
+      <point x="304.0" y="54.0" />
+      <point x="352.5" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.zhaoshg.test.event.SkillListener" target="com.zhaoshg.test.event.EventListener">
+      <point x="0.0" y="-14.5" />
+      <point x="60.5" y="286.0" />
+      <point x="109.75" y="286.0" />
+      <point x="-33.0" y="14.5" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.lang.Comparable">
+      <point x="-20.75" y="-14.5" />
+      <point x="262.5" y="54.0" />
+      <point x="214.0" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.zhaoshg.test.event.AttrChangeListener" target="com.zhaoshg.test.event.EventListener">
+      <point x="0.0" y="-14.5" />
+      <point x="225.0" y="286.0" />
+      <point x="175.75" y="286.0" />
+      <point x="33.0" y="14.5" />
+    </edge>
+    <edge source="com.zhaoshg.test.event.CommonEventDispatcher" target="java.lang.Enum">
+      <point x="51.0" y="-14.5" />
+      <point x="176.5" y="133.0" />
+      <point x="262.5" y="133.0" />
+      <point x="-20.75" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="205.5" y="246.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

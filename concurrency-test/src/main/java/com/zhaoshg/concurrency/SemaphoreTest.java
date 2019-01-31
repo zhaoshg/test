@@ -1,4 +1,4 @@
-package com.zhaoshg.concurrent;
+package com.zhaoshg.concurrency;
 
 import org.junit.Test;
 

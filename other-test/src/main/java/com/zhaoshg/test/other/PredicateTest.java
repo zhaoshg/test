@@ -1,4 +1,4 @@
-package com.zhaoshg.colletions;
+package com.zhaoshg.test.other;
 
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import java.util.function.Predicate;
 
 /**
  * TODO Write down the function of this class
- *
+ *ß
  * @Description
  * @auther zhaoshg    mail:mr.zhaoshg@gmail.com
  * @create 2019-01-11 17:04
