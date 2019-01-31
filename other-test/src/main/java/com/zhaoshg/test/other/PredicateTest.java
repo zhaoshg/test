@@ -28,6 +28,7 @@ public class PredicateTest {
         filter(languages, (str) -> false);
         System.out.println("Print language whose length greater than 4:");
         filter(languages, (str) -> str.length() > 4);
+
     }
 
     public static void filter(List<String> names, Predicate<String> condition) {
