@@ -1,6 +1,6 @@
 package com.zhaoshg.test.other;
 
-public class SubA extends SuperC {
+public class SubA extends SuperClass {
 
     @Override
     public void test() {
