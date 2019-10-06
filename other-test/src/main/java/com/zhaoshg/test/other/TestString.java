@@ -2,12 +2,41 @@ package com.zhaoshg.test.other;
 
 import org.junit.Test;
 
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.math.BigDecimal;
+import java.nio.charset.Charset;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TestString {
 
+    public static void main(String[] args) {
+//        BigDecimal aa  = BigDecimal.valueOf(4.35).
+//                add(BigDecimal.valueOf(90).divide(new BigDecimal(100),4, BigDecimal.ROUND_HALF_UP))
+//                .setScale(8,   BigDecimal.ROUND_HALF_UP);
+//        BigDecimal bb = BigDecimal.ZERO.setScale(8,BigDecimal.ROUND_HALF_UP);
+//        System.out.println(aa.toString());
+//        System.out.println(aa.toPlainString());
+//        System.out.println(bb.toString());
+//        System.out.println(bb.toPlainString());
+        BigDecimal bb = BigDecimal.valueOf(19.33);
+//
+//    String add = bb.setScale(2).toPlainString();
+//    BigDecimal ir = BigDecimal.valueOf(80.50);
+//    BigDecimal res = ir.subtract(BigDecimal.valueOf(Double.valueOf(add))).setScale(2,);
+//        System.out.println(res.toPlainString());
+        String salt = new SimpleDateFormat("yyyyMMddHH").format(new Date()) + "online";
+        String hmacMD5 = hmacMD5("jnyd", salt);
+        System.out.println(hmacMD5);
+
+
+    }
 
     public static HashMap<String, String> typeMap = new HashMap<String, String>();
     public static HashMap<String, String> pairMap = new HashMap<String, String>();
@@ -24,7 +53,7 @@ public class TestString {
     }
 
     @Test
-    public void testStringLength(){
+    public void testStringLength() {
         String str = "【安徽辉隆集团五禾生态肥业有限公司】安徽辉隆集团农资连锁有限责任公司客户您好，您于2018年07月01日15时19分，采购单编号：30-DD180701014，采购商品：45%禾齐多复合肥15-15-15(50KG)，单价￥1,910.00元，数量10吨；51%禾齐多复合肥17-17-17五禾生态(50kg)，单价￥2,350.00元，数量22吨。消费总金额￥70,800.00元。";
         System.out.println(str.length());
     }
@@ -71,7 +100,7 @@ public class TestString {
     }
 
     @Test
-    public  void test1() {
+    public void test1() {
         //        String text = "https://n.oklinklink.com/11722081506200100000001425964794";
         String text = "http://zjd.fun/x?31702031100019752726383491995230&p=1002";
 
@@ -84,6 +113,46 @@ public class TestString {
             System.out.println(matcher.group());
             ;
         }
+    }
+
+
+    public static String hmacMD5(String str, String solt) {
+        byte[] soltBytes;
+        if (null == solt) {
+            soltBytes = new byte[]{-1};
+        } else {
+            soltBytes = solt.getBytes(Charset.forName("UTF-8"));
+        }
+        SecretKeySpec sk = new SecretKeySpec(soltBytes, "HmacMD5");
+        Mac mac;
+        try {
+            mac = Mac.getInstance("HmacMD5");
+            mac.init(sk);
+            byte[] encryBytes = mac.doFinal(str.getBytes(Charset.forName("UTF-8")));
+            return byteToHexString(encryBytes);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return  null;
+        }
+    }
+
+
+    /**
+     * 将指定byte数组转换成16进制字符串
+     *
+     * @param b
+     * @return
+     */
+    public static String byteToHexString(byte[] b) {
+        StringBuffer hexString = new StringBuffer();
+        for (int i = 0; i < b.length; i++) {
+            String hex = Integer.toHexString(b[i] & 0xFF);
+            if (hex.length() == 1) {
+                hex = '0' + hex;
+            }
+            hexString.append(hex.toUpperCase());
+        }
+        return hexString.toString();
     }
 
 }
