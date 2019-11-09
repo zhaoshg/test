@@ -2,6 +2,8 @@ package com.zhaoshg.test.other;
 
 import org.junit.Test;
 
+
+
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.math.BigDecimal;
@@ -55,6 +57,7 @@ public class TestString {
     @Test
     public void testStringLength() {
         String str = "【安徽辉隆集团五禾生态肥业有限公司】安徽辉隆集团农资连锁有限责任公司客户您好，您于2018年07月01日15时19分，采购单编号：30-DD180701014，采购商品：45%禾齐多复合肥15-15-15(50KG)，单价￥1,910.00元，数量10吨；51%禾齐多复合肥17-17-17五禾生态(50kg)，单价￥2,350.00元，数量22吨。消费总金额￥70,800.00元。";
+        System.out.println(str.length());
         System.out.println(str.length());
     }
 
