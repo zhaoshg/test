@@ -17,7 +17,7 @@ public class LogAnalysis {
     }
 
 
-    public static void analys2(String filePath){
+    public static void analys2(String filePath) {
         File file = new File(filePath);
         BufferedInputStream fis = null;
         BufferedReader reader = null;
@@ -26,31 +26,30 @@ public class LogAnalysis {
             reader = new BufferedReader(new InputStreamReader(fis, "utf-8"), 10 * 1024 * 1024);// 用20M的缓冲读取文本文件
             String lineTxt = "";
             while ((lineTxt = reader.readLine()) != null) {
-                if(lineTxt.contains("(")){
-                    String emun = lineTxt.substring(lineTxt.indexOf("(")+1,lineTxt.lastIndexOf(")"));
-                    String[]  codes = emun.split(",");
+                if (lineTxt.contains("(")) {
+                    String emun = lineTxt.substring(lineTxt.indexOf("(") + 1, lineTxt.lastIndexOf(")"));
+                    String[] codes = emun.split(",");
                     for (String code : codes) {
-                        System.out.print(code.replaceAll("\"","")+",");
+                        System.out.print(code.replaceAll("\"", "") + ",");
                     }
                     System.out.println();
                 }
             }
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
 
-
     public static void analys(String path) throws IOException {
         {
 
-            Map<String, String> urlMap = new LinkedHashMap<>();
-            Map<String, Integer> costMap = new LinkedHashMap<>();
-            String threadNum = null;
-            String url = null;
-            String cost = null;
-            File logDir = new File(path);
+            var urlMap = new LinkedHashMap<String, String>();
+            var costMap = new LinkedHashMap<String, Integer>();
+            var threadNum = "";
+            var url = "";
+            var cost = "";
+            var logDir = new File(path);
             System.out.println("start to analys logs in " + path);
             if (logDir.isDirectory()) {
                 File[] logs = logDir.listFiles();
