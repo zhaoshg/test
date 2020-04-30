@@ -12,7 +12,7 @@ public class HPFactory extends PCFactory {
     @Override
     public Keyboard createKeyboard() {
         Keyboard hpKeyboard = new HPKeyboard();
-        ((HPKeyboard) hpKeyboard).getKeyboard();
+        ((DellKeyboard) hpKeyboard).getKeyboard();
         return hpKeyboard;
     }
 

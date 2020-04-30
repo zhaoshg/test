@@ -1,4 +1,4 @@
-package com.github.zhaoshg.designpatterns.factory;
+package com.github.zhaoshg.designpatterns.factory.simple;
 
 public class EmailSender implements MessageSender {
     @Override

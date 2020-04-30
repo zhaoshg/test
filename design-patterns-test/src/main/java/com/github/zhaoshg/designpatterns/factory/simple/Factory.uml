@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="130.0" y="76.0">com.github.zhaoshg.designpatterns.factory.EmailSender</node>
+    <node x="0.0" y="147.0">com.github.zhaoshg.designpatterns.factory.NormalFactory</node>
+    <node x="54.25" y="0.0">com.github.zhaoshg.designpatterns.factory.MessageSender</node>
+    <node x="0.0" y="218.0">com.github.zhaoshg.designpatterns.factory.MultiFactory</node>
+    <node x="0.0" y="76.0">com.github.zhaoshg.designpatterns.factory.SMSSender</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.github.zhaoshg.designpatterns.factory.EmailSender" target="com.github.zhaoshg.designpatterns.factory.MessageSender">
+      <point x="0.0" y="-13.0" />
+      <point x="192.5" y="51.0" />
+      <point x="158.5" y="51.0" />
+      <point x="34.75" y="13.0" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.SMSSender" target="com.github.zhaoshg.designpatterns.factory.MessageSender">
+      <point x="0.0" y="-13.0" />
+      <point x="55.0" y="51.0" />
+      <point x="89.0" y="51.0" />
+      <point x="-34.75" y="13.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="161.0" y="97.0" />
+  <SelectedNodes>
+    <node>com.github.zhaoshg.designpatterns.factory.EmailSender</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

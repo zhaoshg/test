@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.github.zhaoshg.designpatterns.factory.method.Factory</OriginalElement>
+  <nodes>
+    <node x="25.681249999999977" y="152.0">com.github.zhaoshg.designpatterns.factory.method.KeyboardFactory</node>
+    <node x="136.5" y="0.0">com.github.zhaoshg.designpatterns.factory.method.Product</node>
+    <node x="249.69375" y="76.0">com.github.zhaoshg.designpatterns.factory.method.Mouse</node>
+    <node x="215.68124999999998" y="152.0">com.github.zhaoshg.designpatterns.factory.method.MouseFactory</node>
+    <node x="0.0" y="76.0">com.github.zhaoshg.designpatterns.factory.method.Keyboard</node>
+    <node x="133.69375" y="76.0">com.github.zhaoshg.designpatterns.factory.method.Factory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.github.zhaoshg.designpatterns.factory.method.MouseFactory" target="com.github.zhaoshg.designpatterns.factory.method.Factory">
+      <point x="-44.0" y="-13.0" />
+      <point x="237.68124999999998" y="127.0" />
+      <point x="205.69375" y="127.0" />
+      <point x="24.0" y="13.0" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.method.KeyboardFactory" target="com.github.zhaoshg.designpatterns.factory.method.Product">
+      <point x="0.0" y="-13.0" />
+      <point x="102.18124999999998" y="127.0" />
+      <point x="113.5" y="127.0" />
+      <point x="113.5" y="56.0" />
+      <point x="165.3" y="56.0" />
+      <point x="-19.19999999999999" y="13.0" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.method.Mouse" target="com.github.zhaoshg.designpatterns.factory.method.Product">
+      <point x="0.0" y="-13.0" />
+      <point x="290.69375" y="56.0" />
+      <point x="203.70000000000002" y="56.0" />
+      <point x="19.200000000000017" y="13.0" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.method.KeyboardFactory" target="com.github.zhaoshg.designpatterns.factory.method.Keyboard">
+      <point x="-51.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.method.Keyboard" target="com.github.zhaoshg.designpatterns.factory.method.Product">
+      <point x="0.0" y="-13.0" />
+      <point x="51.5" y="46.0" />
+      <point x="146.1" y="46.0" />
+      <point x="-38.400000000000006" y="13.0" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.method.Factory" target="com.github.zhaoshg.designpatterns.factory.method.Product">
+      <point x="0.0" y="-13.0" />
+      <point x="181.69375" y="56.0" />
+      <point x="184.5" y="56.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.method.MouseFactory" target="com.github.zhaoshg.designpatterns.factory.method.Product">
+      <point x="43.999999999999986" y="-13.0" />
+      <point x="325.68125" y="127.0" />
+      <point x="342.19375" y="127.0" />
+      <point x="342.19375" y="46.0" />
+      <point x="222.90000000000003" y="46.0" />
+      <point x="38.400000000000034" y="13.0" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.method.MouseFactory" target="com.github.zhaoshg.designpatterns.factory.method.Mouse">
+      <point x="0.0" y="-13.0" />
+      <point x="281.68125" y="127.0" />
+      <point x="290.69375" y="127.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="com.github.zhaoshg.designpatterns.factory.method.KeyboardFactory" target="com.github.zhaoshg.designpatterns.factory.method.Factory">
+      <point x="51.0" y="-13.0" />
+      <point x="153.18124999999998" y="127.0" />
+      <point x="157.69375" y="127.0" />
+      <point x="-24.0" y="13.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.7000000000000002" x="134.73529411764707" y="142.30995475113133" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -3,276 +3,132 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="230.72093023255843" y="312.0">com.github.zhaoshg.designpatterns.factory.abs.ASUSMouse</node>
-    <node x="510.1209302325583" y="312.0">com.github.zhaoshg.designpatterns.factory.abs.HPKeyboard</node>
-    <node x="1249.4889534883723" y="423.0">com.github.zhaoshg.designpatterns.factory.abs.DellFactory</node>
-    <node x="565.7459302325583" y="0.0">com.github.zhaoshg.designpatterns.factory.abs.Keyboard</node>
-    <node x="919.1209302325583" y="171.0">com.github.zhaoshg.designpatterns.factory.abs.BaseMic</node>
-    <node x="735.2459302325583" y="0.0">com.github.zhaoshg.designpatterns.factory.abs.Mouse</node>
-    <node x="657.1209302325583" y="171.0">com.github.zhaoshg.designpatterns.factory.abs.PCFactory</node>
-    <node x="788.1209302325583" y="312.0">com.github.zhaoshg.designpatterns.factory.abs.HPMouse</node>
-    <node x="593.4639534883722" y="504.0">com.github.zhaoshg.designpatterns.factory.abs.AbstractFactoryTest</node>
-    <node x="927.3709302325583" y="0.0">com.github.zhaoshg.designpatterns.factory.abs.Mic</node>
-    <node x="1037.1209302325583" y="312.0">com.github.zhaoshg.designpatterns.factory.abs.DellKeyboard</node>
-    <node x="73.72093023255843" y="312.0">com.github.zhaoshg.designpatterns.factory.abs.ASUSKeyboard</node>
-    <node x="504.1209302325583" y="171.0">com.github.zhaoshg.designpatterns.factory.abs.BaseKeyboard</node>
-    <node x="1185.1209302325583" y="312.0">com.github.zhaoshg.designpatterns.factory.abs.DellMouse</node>
-    <node x="1315.1209302325583" y="312.0">com.github.zhaoshg.designpatterns.factory.abs.DellMic</node>
-    <node x="925.1209302325583" y="312.0">com.github.zhaoshg.designpatterns.factory.abs.HPMic</node>
-    <node x="782.1209302325583" y="171.0">com.github.zhaoshg.designpatterns.factory.abs.BaseMouse</node>
-    <node x="142.61395348837232" y="423.0">com.github.zhaoshg.designpatterns.factory.abs.ASUSFactory</node>
-    <node x="789.8639534883723" y="423.0">com.github.zhaoshg.designpatterns.factory.abs.HPFactory</node>
-    <node x="369.7209302325584" y="312.0">com.github.zhaoshg.designpatterns.factory.abs.ASUSMic</node>
+    <node x="558.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.ASUSMouse</node>
+    <node x="0.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.HPKeyboard</node>
+    <node x="178.25" y="0.0">com.github.zhaoshg.designpatterns.factory.abs.Keyboard</node>
+    <node x="818.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.DellFactory</node>
+    <node x="1347.0" y="86.0">com.github.zhaoshg.designpatterns.factory.abs.BaseMic</node>
+    <node x="778.25" y="0.0">com.github.zhaoshg.designpatterns.factory.abs.Mouse</node>
+    <node x="970.5" y="86.0">com.github.zhaoshg.designpatterns.factory.abs.PCFactory</node>
+    <node x="442.00000000000006" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.HPMouse</node>
+    <node x="0.0" y="233.0">com.github.zhaoshg.designpatterns.factory.abs.AbstractFactoryTest</node>
+    <node x="1315.1359649122808" y="0.0">com.github.zhaoshg.designpatterns.factory.abs.Mic</node>
+    <node x="290.00000000000006" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.DellKeyboard</node>
+    <node x="138.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.ASUSKeyboard</node>
+    <node x="138.0" y="86.0">com.github.zhaoshg.designpatterns.factory.abs.BaseKeyboard</node>
+    <node x="688.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.DellMouse</node>
+    <node x="1456.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.DellMic</node>
+    <node x="1354.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.HPMic</node>
+    <node x="558.0" y="86.0">com.github.zhaoshg.designpatterns.factory.abs.BaseMouse</node>
+    <node x="963.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.ASUSFactory</node>
+    <node x="1108.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.HPFactory</node>
+    <node x="1238.0" y="162.0">com.github.zhaoshg.designpatterns.factory.abs.ASUSMic</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellFactory" target="com.github.zhaoshg.designpatterns.factory.abs.DellMouse">
-      <point x="-5.600000000000023" y="-15.5" />
-      <point x="1299.8889534883722" y="363.0" />
-      <point x="1267.6209302325583" y="363.0" />
-      <point x="27.5" y="15.5" />
-    </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.PCFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Mouse">
-      <point x="8.75" y="-15.5" />
-      <point x="718.3709302325583" y="121.0" />
-      <point x="771.9125968992249" y="121.0" />
-      <point x="-7.333333333333371" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="1025.5" y="46.0" />
+      <point x="839.75" y="46.0" />
+      <point x="20.5" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellFactory" target="com.github.zhaoshg.designpatterns.factory.abs.PCFactory">
-      <point x="-28.0" y="-15.5" />
-      <point x="1277.4889534883723" y="383.0" />
-      <point x="1174.6209302325583" y="383.0" />
-      <point x="1174.6209302325583" y="242.0" />
-      <point x="748.9959302325583" y="242.0" />
-      <point x="39.375" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSFactory" target="com.github.zhaoshg.designpatterns.factory.abs.ASUSKeyboard">
-      <point x="-18.149999999999977" y="-15.5" />
-      <point x="184.96395348837234" y="373.0" />
-      <point x="107.72093023255843" y="373.0" />
-      <point x="-34.0" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="880.5" y="137.0" />
+      <point x="988.8333333333335" y="137.0" />
+      <point x="-36.66666666666663" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellMouse" target="com.github.zhaoshg.designpatterns.factory.abs.BaseMouse">
-      <point x="0.0" y="-15.5" />
-      <point x="1240.1209302325583" y="232.0" />
-      <point x="878.7875968992249" y="232.0" />
-      <point x="38.66666666666663" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="743.0" y="137.0" />
+      <point x="649.6666666666667" y="137.0" />
+      <point x="36.66666666666663" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellMic" target="com.github.zhaoshg.designpatterns.factory.abs.BaseMic">
-      <point x="0.0" y="-15.5" />
-      <point x="1360.6209302325583" y="222.0" />
-      <point x="999.9542635658917" y="222.0" />
-      <point x="32.33333333333337" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="1504.0" y="137.0" />
+      <point x="1427.0" y="137.0" />
+      <point x="32.0" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSMouse" target="com.github.zhaoshg.designpatterns.factory.abs.BaseMouse">
-      <point x="0.0" y="-15.5" />
-      <point x="290.22093023255843" y="282.0" />
-      <point x="801.4542635658916" y="282.0" />
-      <point x="-38.666666666666686" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPMic" target="com.github.zhaoshg.designpatterns.factory.abs.BaseMic">
-      <point x="0.0" y="-15.5" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSFactory" target="com.github.zhaoshg.designpatterns.factory.abs.ASUSMouse">
-      <point x="18.150000000000006" y="-15.5" />
-      <point x="221.2639534883723" y="373.0" />
-      <point x="260.47093023255843" y="373.0" />
-      <point x="-29.75" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPFactory" target="com.github.zhaoshg.designpatterns.factory.abs.HPMic">
-      <point x="37.09999999999991" y="-15.5" />
-      <point x="879.9639534883722" y="393.0" />
-      <point x="988.8709302325583" y="393.0" />
-      <point x="21.25" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPFactory" target="com.github.zhaoshg.designpatterns.factory.abs.HPMouse">
-      <point x="5.2999999999999545" y="-15.5" />
-      <point x="848.1639534883723" y="363.0" />
-      <point x="866.1209302325583" y="363.0" />
-      <point x="26.0" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Mic">
-      <point x="-30.25" y="-15.5" />
-      <point x="172.86395348837232" y="383.0" />
-      <point x="63.22093023255843" y="383.0" />
-      <point x="63.22093023255843" y="131.0" />
-      <point x="933.1209302325583" y="131.0" />
-      <point x="-28.75" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Keyboard">
-      <point x="-47.700000000000045" y="-15.5" />
-      <point x="795.1639534883723" y="403.0" />
-      <point x="493.6209302325583" y="403.0" />
-      <point x="493.6209302325583" y="81.0" />
-      <point x="591.9959302325583" y="81.0" />
-      <point x="-26.25" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSMic" target="com.github.zhaoshg.designpatterns.factory.abs.BaseMic">
-      <point x="0.0" y="-15.5" />
-      <point x="419.7209302325584" y="292.0" />
-      <point x="935.2875968992249" y="292.0" />
-      <point x="-32.33333333333337" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Mic">
-      <point x="50.39999999999998" y="-15.5" />
-      <point x="1355.8889534883722" y="403.0" />
-      <point x="1484.9848837209306" y="403.0" />
-      <point x="1484.9848837209306" y="51.0" />
-      <point x="990.6209302325583" y="51.0" />
-      <point x="28.75" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Mouse">
-      <point x="15.900000000000091" y="-15.5" />
-      <point x="858.7639534883724" y="373.0" />
-      <point x="908.6209302325583" y="373.0" />
-      <point x="908.6209302325583" y="111.0" />
-      <point x="801.2459302325583" y="111.0" />
-      <point x="22.0" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="1286.0" y="137.0" />
+      <point x="1363.0" y="137.0" />
+      <point x="-32.0" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.PCFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Keyboard">
-      <point x="-43.75" y="-15.5" />
-      <point x="665.8709302325583" y="91.0" />
-      <point x="626.9959302325583" y="91.0" />
-      <point x="8.75" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellFactory" target="com.github.zhaoshg.designpatterns.factory.abs.DellKeyboard">
-      <point x="-39.200000000000045" y="-15.5" />
-      <point x="1266.288953488372" y="393.0" />
-      <point x="1132.3709302325583" y="393.0" />
-      <point x="31.75" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.AbstractFactoryTest" target="com.github.zhaoshg.designpatterns.factory.abs.PCFactory">
-      <point x="-40.5" y="-15.5" />
-      <point x="633.9639534883722" y="479.0" />
-      <point x="480.2209302325583" y="479.0" />
-      <point x="480.2209302325583" y="272.0" />
-      <point x="696.4959302325583" y="272.0" />
-      <point x="-13.125" y="15.5" />
+      <point x="-36.66666666666663" y="-13.0" />
+      <point x="988.8333333333335" y="56.0" />
+      <point x="255.5" y="56.0" />
+      <point x="25.75" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSFactory" target="com.github.zhaoshg.designpatterns.factory.abs.PCFactory">
-      <point x="6.0499999999999545" y="-15.5" />
-      <point x="209.16395348837227" y="363.0" />
-      <point x="220.22093023255843" y="363.0" />
-      <point x="220.22093023255843" y="262.0" />
-      <point x="670.2459302325583" y="262.0" />
-      <point x="-39.375" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPFactory" target="com.github.zhaoshg.designpatterns.factory.abs.HPKeyboard">
-      <point x="-26.5" y="-15.5" />
-      <point x="816.3639534883723" y="383.0" />
-      <point x="600.8709302325583" y="383.0" />
-      <point x="30.25" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellFactory" target="com.github.zhaoshg.designpatterns.factory.abs.DellMic">
-      <point x="16.799999999999955" y="-15.5" />
-      <point x="1322.288953488372" y="373.0" />
-      <point x="1383.3709302325583" y="373.0" />
-      <point x="22.75" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.AbstractFactoryTest" target="com.github.zhaoshg.designpatterns.factory.abs.HPFactory">
-      <point x="40.5" y="-15.5" />
-      <point x="714.9639534883722" y="479.0" />
-      <point x="842.8639534883723" y="479.0" />
-      <point x="0.0" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.BaseMic" target="com.github.zhaoshg.designpatterns.factory.abs.Mic">
-      <point x="0.0" y="-15.5" />
-      <point x="5.75" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="1395.0" y="66.0" />
+      <point x="1365.3859649122808" y="66.0" />
+      <point x="16.75" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPMouse" target="com.github.zhaoshg.designpatterns.factory.abs.BaseMouse">
-      <point x="0.0" y="-15.5" />
-      <point x="0.0" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSFactory" target="com.github.zhaoshg.designpatterns.factory.abs.ASUSMic">
-      <point x="42.349999999999994" y="-15.5" />
-      <point x="245.46395348837234" y="393.0" />
-      <point x="394.7209302325584" y="393.0" />
-      <point x="-25.0" y="15.5" />
+      <point x="-5.6843418860808015E-14" y="-13.0" />
+      <point x="490.0" y="137.0" />
+      <point x="576.3333333333335" y="137.0" />
+      <point x="-36.66666666666663" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSKeyboard" target="com.github.zhaoshg.designpatterns.factory.abs.BaseKeyboard">
-      <point x="0.0" y="-15.5" />
-      <point x="141.72093023255843" y="252.0" />
-      <point x="526.2875968992249" y="252.0" />
-      <point x="-44.33333333333337" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Keyboard">
-      <point x="-54.44999999999993" y="-15.5" />
-      <point x="148.66395348837239" y="403.0" />
-      <point x="0.0" y="403.0" />
-      <point x="0.0" y="71.0" />
-      <point x="574.4959302325583" y="71.0" />
-      <point x="-43.75" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Mic">
-      <point x="47.700000000000045" y="-15.5" />
-      <point x="890.5639534883724" y="403.0" />
-      <point x="1026.6209302325583" y="403.0" />
-      <point x="1026.6209302325583" y="151.0" />
-      <point x="979.1209302325583" y="151.0" />
-      <point x="17.25" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.ASUSFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Mouse">
-      <point x="-42.34999999999991" y="-15.5" />
-      <point x="160.7639534883724" y="393.0" />
-      <point x="33.87558139534883" y="393.0" />
-      <point x="33.87558139534883" y="101.0" />
-      <point x="742.5792635658917" y="101.0" />
-      <point x="-36.66666666666663" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Mouse">
-      <point x="39.200000000000045" y="-15.5" />
-      <point x="1344.6889534883721" y="393.0" />
-      <point x="1452.6093023255817" y="393.0" />
-      <point x="1452.6093023255817" y="61.0" />
-      <point x="815.9125968992249" y="61.0" />
-      <point x="36.66666666666663" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.BaseKeyboard" target="com.github.zhaoshg.designpatterns.factory.abs.Keyboard">
-      <point x="0.0" y="-15.5" />
-      <point x="570.6209302325583" y="91.0" />
-      <point x="609.4959302325583" y="91.0" />
-      <point x="-8.75" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="-25.75" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPFactory" target="com.github.zhaoshg.designpatterns.factory.abs.PCFactory">
-      <point x="-15.900000000000091" y="-15.5" />
-      <point x="826.9639534883722" y="373.0" />
-      <point x="722.7459302325583" y="373.0" />
-      <point x="13.125" y="15.5" />
-    </edge>
-    <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Keyboard">
-      <point x="28.0" y="-15.5" />
-      <point x="1333.4889534883723" y="383.0" />
-      <point x="1416.6209302325583" y="383.0" />
-      <point x="1416.6209302325583" y="71.0" />
-      <point x="661.9959302325583" y="71.0" />
-      <point x="43.75" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="1163.0" y="137.0" />
+      <point x="1062.1666666666667" y="137.0" />
+      <point x="36.66666666666674" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.PCFactory" target="com.github.zhaoshg.designpatterns.factory.abs.Mic">
-      <point x="43.75" y="-15.5" />
-      <point x="753.3709302325583" y="151.0" />
-      <point x="956.1209302325583" y="151.0" />
-      <point x="-5.75" y="15.5" />
+      <point x="36.66666666666674" y="-13.0" />
+      <point x="1062.1666666666667" y="66.0" />
+      <point x="1331.8859649122808" y="66.0" />
+      <point x="-16.75" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.DellKeyboard" target="com.github.zhaoshg.designpatterns.factory.abs.BaseKeyboard">
-      <point x="0.0" y="-15.5" />
-      <point x="1100.6209302325583" y="252.0" />
-      <point x="614.9542635658916" y="252.0" />
-      <point x="44.33333333333326" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="356.00000000000006" y="137.0" />
+      <point x="248.0" y="137.0" />
+      <point x="44.0" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.HPKeyboard" target="com.github.zhaoshg.designpatterns.factory.abs.BaseKeyboard">
-      <point x="0.0" y="-15.5" />
-      <point x="0.0" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="59.0" y="137.0" />
+      <point x="160.0" y="137.0" />
+      <point x="-44.0" y="13.0" />
     </edge>
     <edge source="com.github.zhaoshg.designpatterns.factory.abs.BaseMouse" target="com.github.zhaoshg.designpatterns.factory.abs.Mouse">
-      <point x="0.0" y="-15.5" />
-      <point x="840.1209302325583" y="121.0" />
-      <point x="786.5792635658917" y="121.0" />
-      <point x="7.333333333333371" y="15.5" />
+      <point x="0.0" y="-13.0" />
+      <point x="613.0" y="66.0" />
+      <point x="798.75" y="66.0" />
+      <point x="-20.5" y="13.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.9000000000000004" x="652.9583333333333" y="218.44035947712405" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="0.9999999999999997" x="464.50000000000017" y="214.11538461538478" />
+  <SelectedNodes>
+    <node>com.github.zhaoshg.designpatterns.factory.abs.BaseMouse</node>
+  </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
